@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*
+{
+  font-family: "Poppins", sans-serif;
+}
+
+/* html tag and common for entire website */
+body
+{
+  margin: 0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+ul
+{
+  list-style-type: none;
+  padding-top: 100px;
+}
+
+.section-dark
+{
+	background: #262626;
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/* some fixed stuffs of the website */
+.progress-bar
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 5px;
+	width: 0%;
+	background: gray;
+	border-radius: 6px;
+	z-index: 2  ;
+}
+
+
+.container
+{
+
+}
+
+.side-menu
+{
+  width: 210px;
+  position: fixed;
+	background-color:black;
+	text-align: left;
+	color:white;
+	line-height: 80px;
+	transition: opacity 1s, background-color 1s, line-height 1s, font-size 1s, color 1s;
+	z-index: 1;
+}
+
+.side-menu:hover
+{
+	opacity: 1;
+	background-color: #000000;
+	color: #ffffff;
+
+  .button_center
+  {
+    transition: opacity 1s, background-color 1s, line-height 1s, font-size 1s, color 1s;
+    
+  }
+}
+.button-resume:hover
+{
+	opacity: 1;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#a, #b, #c, #d, #e, #f
+{
+  color: gray;
+  font-size: 22px;
+	border-radius: 2px;
+}
+
+#a:hover, #b:hover, #c:hover, #d:hover, #e:hover, #f:hover
+{
+	color: #ffffff;
+  font-size: 24px;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/* common stuffs for sections */
+.sections
+{
+  display: grid;
+  grid-template: 1fr / 1fr;
+  margin-left: 210px;
+  grid-row-gap: 40px;
+}
+
+.side-menu, .about, .education, .skills, .certifications, .projects, .contact
+{
+}
+
+.side-menu
+{
+  height: 100vh;
+}
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/* about section */
+.about
+{
+  display: grid;
+  grid-template: 400px 100px / repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.photo_holder
+{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo
+{
+  height: 250px;
+  width: 250px;
+  /*margin-top: 150px;
+  margin-left: 80px;*/
+  border-radius: 50%;
+}
+
+.about_text_holder
+{
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+}
+
+.about-text
+{
+  font-size: 30px;
+}
+
+.button_center
+{
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-resume
+{
+	text-decoration: none;
+	color: #f2f2f2;
+	text-align: center;
+	border-radius: 20px;
+	width: 250px;
+	height: 60px;
+	z-index: 1;
+	font-size: 22px;
+	background: #333333;
+	box-shadow: 8px 8px 15px #333333;
+}
+
+.download-resume:hover
+{
+    opacity:1s;
+  font-size: 21px;
+	color: white;
+	box-shadow: 0px 0px 15px #333333;
+}
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/*   education section */
+.education
+{
+  color: #DFCFBE;
+  display: grid;
+  grid-template: 150px 80px 80px 80px/ repeat(2, 1fr);
+}
+
+.education_header
+{
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.uni, .college, .school
+{
+  font-size: 30px;
+  grid-column: 1 / -1;
+  margin-left: 10px;
+
+}
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/* skills section */
+.skills
+{
+  display: grid;
+  color: #282D3C;
+  grid-template: 1fr /  1fr;
+  grid-column-gap: 30px;
+}
+
+.skills_header
+{
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.technical_skills_header, .other_skills_header
+{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.technical_skills, .other_skills
+{
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.certifications
+{
+  color: #DFCFBE;
+  display: grid;
+  grid-template: 2fr 1.2fr 1.2fr 1fr / 1fr;
+}
+
+.certifications_header
+{
+
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.certificate
+{
+  grid-column: 1 / -1;
+  font-size: 30px;
+  margin-left: 10px;
+}
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/* projects section  */
+.projects
+{
+  display: grid;
+  grid-template: 150px 290px/ repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.projects_header
+{
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 340px;
+}
+
+.card:hover
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contain
+{
+  padding: 2px 16px;
+}
+
+.project_img
+{
+  height: 150px;
+  width: 200px;
+}
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/* contact section */
+.contact
+{
+  color: #DFCFBE;
+  display: grid;
+  grid-template: repeat(auto-fill, minmax(100px, 1fr)) / repeat(9, 1fr);
+  grid-gap: 30px;
+}
+
+.contact_header
+{
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.contact_img_holder
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_img
+{
+  height: 60px;
+  width: 60px;
+}
+
+.contact_img_mail
+{
+  height: 80px;
+  width: 60px;
+}
+
+.one
+{
+  grid-column: 4 / 5;
+}
+
+.two
+{
+  grid-column: 5 / 6;
+}
+
+.three
+{
+  grid-column: 6 / 7;
+}
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
